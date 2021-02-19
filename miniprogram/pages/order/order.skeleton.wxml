@@ -1,0 +1,127 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/1/30 上午11:06:35 
+使用方法：
+在 E:\小程序项目\niceCanteen\miniprogram\pages\order\order.wxml 引入模板
+
+```
+<import src="order.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 E:\小程序项目\niceCanteen\miniprogram\pages\order\order.wxss 中引入样式
+```
+@import "./order.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="order sk-image">
+      <view is="vant/tabs/index">
+        <view class=" van-tabs tabs-index--van-tabs van-tabs--line tabs-index--van-tabs--line">
+          <view is="vant/sticky/index">
+            <view class=" van-sticky sticky-index--van-sticky" style="z-index: 1;">
+              <view class="van-sticky-wrap sticky-index--van-sticky-wrap" style="z-index: 1;">
+                <view class="van-tabs__wrap tabs-index--van-tabs__wrap">
+                  <scroll-view scroll-with-animation="true" class="van-tabs__scroll tabs-index--van-tabs__scroll van-tabs__scroll--line tabs-index--van-tabs__scroll--line" scroll-left="0" style="border-color: #1dc7ff">
+                    <view class="van-tabs__nav tabs-index--van-tabs__nav van-tabs__nav--line tabs-index--van-tabs__nav--line " style="true">
+                      <view class="van-tabs__line tabs-index--van-tabs__line" style="width:40px;transform:translateX(39.20000076293945px);-webkit-transform:translateX(39.20000076293945px);background-color:#1dc7ff"></view>
+                      <view class="  van-ellipsis tabs-index--van-ellipsis van-tab tabs-index--van-tab van-tab--active tabs-index--van-tab--active" data-index="0" style="color:#1dc7ff">
+                        <view class="van-ellipsis tabs-index--van-ellipsis sk-transparent sk-text-34-0909-714 sk-text" style="background-position-x: 50%;">
+                          全部
+                        </view>
+                      </view>
+                      <view class=" van-ellipsis tabs-index--van-ellipsis van-tab tabs-index--van-tab" data-index="1" style="true">
+                        <view class="van-ellipsis tabs-index--van-ellipsis sk-transparent sk-text-34-0909-186 sk-text" style="background-position-x: 50%;">
+                          配送中
+                        </view>
+                      </view>
+                      <view class=" van-ellipsis tabs-index--van-ellipsis van-tab tabs-index--van-tab" data-index="2" style="true">
+                        <view class="van-ellipsis tabs-index--van-ellipsis sk-transparent sk-text-34-0909-432 sk-text" style="background-position-x: 50%;">
+                          已完成
+                        </view>
+                      </view>
+                    </view>
+                  </scroll-view>
+                </view>
+              </view>
+            </view>
+          </view>
+          <view class="van-tabs__content tabs-index--van-tabs__content">
+            <view class="van-tabs__track tabs-index--van-tabs__track van-tabs__track tabs-index--van-tabs__track" style="true">
+              <view is="vant/tab/index">
+                <view class=" van-tab__pane tab-index--van-tab__pane van-tab__pane--active tab-index--van-tab__pane--active" style="true">
+                  <view is="components/orderInfoBox/orderInfoBox">
+                    <view class="orderInfoBox--order-info-box">
+                      <view class="orderInfoBox--header">
+                        <view class="orderInfoBox--order-no sk-transparent sk-text-14-2857-493 sk-text">NO520520520520520</view>
+                        <view class="orderInfoBox--status sk-transparent sk-text-14-2857-463 sk-text">准备中</view>
+                      </view>
+                      <view class="orderInfoBox--user-info-box">
+                        <view class="orderInfoBox--user-info">
+                          <view>
+                            <text class="orderInfoBox--uname sk-transparent sk-text-14-2857-725 sk-text"></text>
+                            <text class="orderInfoBox--uphone sk-transparent sk-text-14-2857-127 sk-text">1234567890</text>
+                          </view>
+                          <view class="orderInfoBox--uaddress sk-transparent sk-text-14-2857-860 sk-text"></view>
+                        </view>
+                      </view>
+                      <view class="orderInfoBox--product-info-box">
+                        <image class="orderInfoBox--pro-img sk-image"></image>
+                        <view class="orderInfoBox--product-info">
+                          <view class="orderInfoBox--title sk-transparent sk-text-14-2857-80 sk-text"></view>
+                          <view class="orderInfoBox--rules sk-transparent sk-text-14-2857-354 sk-text"></view>
+                          <view class="orderInfoBox--price-num">
+                            <view class="orderInfoBox--price sk-transparent">￥
+                              <text class="orderInfoBox--price-text sk-transparent sk-text-14-2857-587 sk-text"></text>
+                            </view>
+                            <text class="orderInfoBox--num sk-transparent sk-text-14-2857-210 sk-text">x</text>
+                          </view>
+                        </view>
+                      </view>
+                      <view class="orderInfoBox--product-info-box">
+                        <image class="orderInfoBox--pro-img sk-image"></image>
+                        <view class="orderInfoBox--product-info">
+                          <view class="orderInfoBox--title sk-transparent sk-text-14-2857-425 sk-text"></view>
+                          <view class="orderInfoBox--rules sk-transparent sk-text-14-2857-328 sk-text"></view>
+                          <view class="orderInfoBox--price-num">
+                            <view class="orderInfoBox--price sk-transparent">￥
+                              <text class="orderInfoBox--price-text sk-transparent sk-text-14-2857-93 sk-text"></text>
+                            </view>
+                            <text class="orderInfoBox--num sk-transparent sk-text-14-2857-267 sk-text">x</text>
+                          </view>
+                        </view>
+                      </view>
+                      <view class="orderInfoBox--product-info-box">
+                        <image class="orderInfoBox--pro-img sk-image"></image>
+                        <view class="orderInfoBox--product-info">
+                          <view class="orderInfoBox--title sk-transparent sk-text-14-2857-562 sk-text"></view>
+                          <view class="orderInfoBox--rules sk-transparent sk-text-14-2857-874 sk-text"></view>
+                          <view class="orderInfoBox--price-num">
+                            <view class="orderInfoBox--price sk-transparent">￥
+                              <text class="orderInfoBox--price-text sk-transparent sk-text-14-2857-379 sk-text"></text>
+                            </view>
+                            <text class="orderInfoBox--num sk-transparent sk-text-14-2857-446 sk-text">x</text>
+                          </view>
+                        </view>
+                      </view>
+                      <view class="orderInfoBox--gap" style="border: none;"></view>
+                      <view class="orderInfoBox--time-box sk-transparent sk-text-14-2857-23 sk-text">2021-01-30 10:25:00</view>
+                      <view class="orderInfoBox--total-box">
+                        <view class="sk-transparent sk-text-14-2857-579 sk-text">共计 0 件</view>
+                        <view class="orderInfoBox--prices sk-transparent sk-text-14-2857-520 sk-text">合计 ￥0</view>
+                      </view>
+                    </view>
+                  </view>
+                </view>
+              </view>
+              <view is="vant/tab/index"></view>
+              <view is="vant/tab/index"></view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

@@ -1,0 +1,32 @@
+<!-- 未登录时 -->
+<view class="ulogin-order" wx:if="{{!isAuth}}">
+  <image src="../../images/empty_order.jpg" class="ulogin-img"></image>
+  <view class="ulogin-text">登录后查看外卖订单</view>
+  <button size="mini" class="login-btn" open-type="getUserInfo" bindgetuserinfo="getuserinfo">立即登录</button>
+</view>
+
+<!-- 登录了 -->
+<block wx:else>
+  <!-- 数据库的订单集合为空时 -->
+  <view class="ulogin-order" wx:if="{{!orderDatas}}">
+    <image src="../../images/empty_order.jpg" class="ulogin-img"></image>
+    <view class="empty-text">亲，你还没有任何订单呐！</view>
+  </view>
+  <!-- 订单集合不为空时 -->
+  <view wx:else>
+    <import src="order.skeleton.wxml" />
+    <template is="skeleton" wx-if="{{loading}}" />
+
+    <view class="order" wx:else>
+      <van-tabs active="{{ active }}" title-active-color="#1dc7ff" color="#1dc7ff" bind:change="changeOrderDatas">
+        <block wx:for="{{tabs}}" wx:key="index" wx:for-item="tab">
+          <van-tab title="{{tab.title}}">
+            <order-info-box order-datas="{{orderDatas}}"></order-info-box>
+          </van-tab>
+        </block>
+      </van-tabs>
+
+      <view class="not-data" wx:if="{{!isHas}}">没有更多数据啦！</view>
+    </view>
+  </view>
+</block>

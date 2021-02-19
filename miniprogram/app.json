@@ -1,0 +1,41 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/me/me",
+    "pages/pay/pay",
+    "pages/address/address",
+    "pages/edit_address/edit_address",
+    "pages/order/order",
+    "pages/self/self"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#64d7ff",
+    "navigationBarTitleText": "Nice 餐厅",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#64d7ff",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./images/canteen.png",
+        "selectedIconPath": "./images/canteen_ac.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "./images/order.png",
+        "selectedIconPath": "./images/order_ac.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "text": "我的",
+        "iconPath": "./images/me.png",
+        "selectedIconPath": "./images/me_ac.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

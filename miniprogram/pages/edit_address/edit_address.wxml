@@ -1,0 +1,37 @@
+<import src="edit_address.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+
+<view class="edit-address" wx:else>
+  <view class="address-info-box">
+    <view class="info-item-box">
+      <text class="title">姓名</text>
+      <input type="text" placeholder="收货人姓名" placeholder-style="color: #ccc; font-size: 26rpx" value="{{addressInfo.uname}}" data-key="uname" bindblur="editAddressInfo" />
+    </view>
+    <view class="info-item-box">
+      <text class="title">电话</text>
+      <input type="text" placeholder="收货人电话" placeholder-style="color: #ccc; font-size: 26rpx" value="{{addressInfo.phone}}" data-key="phone" bindblur="editAddressInfo" />
+    </view>
+    <view class="info-item-box">
+      <text class="title">地区</text>
+      <picker mode="region" class="picker-box {{areaStr == '选择省 / 市 / 区' ? '' : 'active-area'}}" data-key="area" bindchange="editArea">{{addressInfo.area}}</picker>
+      <image src="../../images/right.png"></image>
+    </view>
+    <view class="info-item-box">
+      <text class="title">详细地址</text>
+      <input type="text" placeholder="街道门牌、楼层房间号等信息" placeholder-style="color: #ccc; font-size: 26rpx" value="{{addressInfo.detailArea}}" data-key="detailArea" bindblur="editAddressInfo" />
+    </view>
+  </view>
+
+  <view class="default-box">
+    <text>设为默认收货地址</text>
+    <switch checked="{{addressInfo.default}}" data-key="default" bindchange="editAddressInfo" color="#1dc7ff"></switch>
+  </view>
+
+  <view class="btn-box btn-save">
+    <view class="btn" bindtap="saveAddress">{{currentId ? "保存地址" : "新增地址"}}</view>
+  </view>
+
+  <view class="btn-box btn-del" wx:if="{{currentId}}">
+    <view class="btn" bindtap="delAddress">删除</view>
+  </view>
+</view>

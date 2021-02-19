@@ -1,0 +1,28 @@
+<import src="address.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+
+<view class="address" wx:else>
+  <!-- 新增地址盒子 -->
+  <view class="add-address" bindtap="goEditAddress">
+    <text>新增地址</text>
+    <image src="../../images/right.png" class="image-size"></image>
+  </view>
+
+  <!-- 每条地址信息盒子 -->
+  <block wx:for="{{allAddresses}}" wx:key="index" wx:for-item="address">
+    <view class="user-info-box">
+      <view class="user-info" bindtap="goPay" data-address="{{address}}">
+        <view>
+          <text class="uname">{{address.uname}}</text>
+          <text class="uphone">{{address.phone}}</text>
+          <text class="default" wx:if="{{address.default}}">默认</text>
+        </view>
+        <view class="uaddress">{{address.uaddress}}</view>
+      </view>
+      <view class="edit" catchtap="goEditAddress" data-address="{{address}}">
+        <image src="../../images/edit.png"></image>
+      </view>
+    </view>
+  </block>
+
+</view>

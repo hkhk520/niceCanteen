@@ -1,0 +1,46 @@
+<block wx:for="{{orderDatas}}" wx:key="index" wx:for-item="order">
+  <view class="order-info-box">
+    <view class="header">
+      <view class="order-no">{{order.orderNo}}</view>
+      <view class="one-more" bindtap="addOneMore" data-order="{{order}}">再来一单</view>
+    </view>
+    <!-- 用户信息和地址信息盒子 -->
+    <view class="user-info-box">
+      <view class="user-info">
+        <view>
+          <text class="uname">{{order.address.uname}}</text>
+          <text class="uphone">{{order.address.phone}}</text>
+        </view>
+        <view class="uaddress">{{order.address.uaddress}}</view>
+      </view>
+    </view>
+
+    <!-- 商品订单信息盒子 -->
+    <block wx:for="{{order.product}}" wx:for-index="i" wx:for-item="productItem" wx:key="i">
+      <view class="product-info-box">
+        <image src="{{productItem.img}}" class="pro-img"></image>
+        <view class="product-info">
+          <view class="title">{{productItem.title}}</view>
+          <view class="rules">{{productItem.currentRulesStr}}</view>
+          <view class="price-num">
+            <view class="price">￥<text class="price-text">{{productItem.price}}</text></view>
+            <text class="num">x{{productItem.ruleBuyNum}}</text>
+          </view>
+        </view>
+      </view>
+    </block>
+
+    <!-- 分割线 -->
+    <view class="gap"></view>
+
+    <!-- 时间盒子 -->
+    <view class="time-box">{{order.time}}</view>
+
+    <!-- 总数量和总价格盒子 -->
+    <view class="total-box">
+      <view>共计 {{order.totalNumAndPrice.totalNum}} 件</view>
+      <view class="prices">合计 ￥{{order.totalNumAndPrice.totalPrice}}</view>
+    </view>
+
+  </view>
+</block>

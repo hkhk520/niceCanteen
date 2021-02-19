@@ -1,0 +1,115 @@
+<!--
+此文件为开发者工具生成，生成时间: 2021/1/18 下午8:29:10 
+使用方法：
+在 E:\小程序项目\niceCanteen\miniprogram\pages\home\home.wxml 引入模板
+
+```
+<import src="home.skeleton.wxml"/>
+<template is="skeleton" wx-if="{{loading}}" />
+```
+
+在 E:\小程序项目\niceCanteen\miniprogram\pages\home\home.wxss 中引入样式
+```
+@import "./home.skeleton.wxss";
+```
+
+更多详细信息可以参考文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/skeleton.html
+-->
+<template name="skeleton">
+  <view class="sk-container">
+    <view class="home">
+      <image class="home-bg sk-image"></image>
+      <view class="containter-box">
+        <view class="containter">
+          <view class="logo-box">
+            <text class="title"><text class="name sk-transparent sk-text-14-2857-102 sk-text">Nice Canteent</text>
+            <text class="welcome sk-transparent sk-text-14-2857-641 sk-text">美团专送约38分钟 ~ 月售1000 ~ 食无忧</text></text>
+            <image class="logo-img sk-image"></image>
+          </view>
+          <view class="desc sk-transparent sk-text-14-2857-20 sk-text">公告：没有什么是一顿饭解决不了的烦恼，做个开心的吃货呗，吃饱才有力气减肥~~</view>
+          <view class="discounts">
+            <text class="sk-transparent sk-text-14-2857-167 sk-text" style="border: none;">20减4</text>
+            <text class="sk-transparent sk-text-14-2857-635 sk-text" style="border: none;">38减8</text>
+            <text class="sk-transparent sk-text-14-2857-106 sk-text" style="border: none;">58减10</text>
+            <text class="sk-transparent sk-text-14-2857-874 sk-text" style="border: none;">配送费优惠</text>
+          </view>
+        </view>
+      </view>
+      <view class="menu-list-box">
+        <view class="menu-nav">
+          <text class="active sk-transparent sk-text-14-2857-21 sk-text" style="border: none;">点餐</text>
+          <text class="sk-transparent sk-text-14-2857-24 sk-text" style="border: none;">评价</text>
+          <text class="sk-transparent sk-text-14-2857-907 sk-text" style="border: none;">商家</text>
+        </view>
+        <view class="menu-list">
+          <view class="asider-nav">
+            <view class="sk-transparent sk-text-14-2857-293 sk-text" style="background-position-x: 50%;">恺恺</view>
+            <view class="sk-transparent sk-text-14-2857-372 sk-text" style="background-position-x: 50%;">恺恺</view>
+            <view class="sk-transparent sk-text-14-2857-124 sk-text" style="background-position-x: 50%;">恺恺</view>
+            <view class="sk-transparent sk-text-14-2857-995 sk-text" style="background-position-x: 50%;">恺恺</view>
+            <view class="sk-transparent sk-text-14-2857-864 sk-text" style="background-position-x: 50%;">恺恺</view>
+            <view class="sk-transparent sk-text-14-2857-109 sk-text" style="background-position-x: 50%;">恺恺</view>
+            <view class="sk-transparent sk-text-14-2857-53 sk-text" style="background-position-x: 50%;">恺恺</view>
+            <view class="sk-transparent sk-text-14-2857-291 sk-text" style="background-position-x: 50%;">恺恺</view>
+          </view>
+          <view class="show-container">
+            <view is="components/product/product">
+              <view class="product--pro-item">
+                <view class="product--img-box">
+                  <image mode="widthFix" style="height: 86px;" class="sk-image"></image>
+                </view>
+                <view class="product--product-desc-box">
+                  <view class="product--pro-title sk-transparent sk-text-14-2857-174 sk-text">酸辣红薯粉(送小鸡排)</view>
+                  <view class="product--pro-center">
+                    <view class="sk-transparent sk-text-14-2857-448 sk-text">主要原料：红薯粉，鸡排</view>
+                    <view class="sk-transparent sk-text-14-2857-423 sk-text">月售66份 好评率100%</view>
+                  </view>
+                  <view class="product--fun-box">
+                    <text class="product--pro-price sk-transparent sk-text-14-2857-200 sk-text">￥12.99</text>
+                    <button size="mini" class="sk-transparent sk-button sk-pseudo sk-pseudo-circle">选 规 格</button>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view is="components/product/product">
+              <view class="product--pro-item">
+                <view class="product--img-box">
+                  <image mode="widthFix" style="height: 86px;" class="sk-image"></image>
+                </view>
+                <view class="product--product-desc-box">
+                  <view class="product--pro-title sk-transparent sk-text-14-2857-949 sk-text">酸辣红薯粉(送小鸡排)</view>
+                  <view class="product--pro-center">
+                    <view class="sk-transparent sk-text-14-2857-33 sk-text">主要原料：红薯粉，鸡排</view>
+                    <view class="sk-transparent sk-text-14-2857-955 sk-text">月售66份 好评率100%</view>
+                  </view>
+                  <view class="product--fun-box">
+                    <text class="product--pro-price sk-transparent sk-text-14-2857-981 sk-text">￥12.99</text>
+                    <button size="mini" class="sk-transparent sk-button sk-pseudo sk-pseudo-circle">选 规 格</button>
+                  </view>
+                </view>
+              </view>
+            </view>
+            <view is="components/product/product">
+              <view class="product--pro-item">
+                <view class="product--img-box">
+                  <image mode="widthFix" style="height: 86px;" class="sk-image"></image>
+                </view>
+                <view class="product--product-desc-box">
+                  <view class="product--pro-title sk-transparent sk-text-14-2857-47 sk-text">酸辣红薯粉(送小鸡排)</view>
+                  <view class="product--pro-center">
+                    <view class="sk-transparent sk-text-14-2857-345 sk-text">主要原料：红薯粉，鸡排</view>
+                    <view class="sk-transparent sk-text-14-2857-971 sk-text">月售66份 好评率100%</view>
+                  </view>
+                  <view class="product--fun-box">
+                    <text class="product--pro-price sk-transparent sk-text-14-2857-182 sk-text">￥12.99</text>
+                    <button size="mini" class="sk-transparent sk-button sk-pseudo sk-pseudo-circle">选 规 格</button>
+                  </view>
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</template>

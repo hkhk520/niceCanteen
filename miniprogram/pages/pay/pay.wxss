@@ -1,0 +1,181 @@
+/* 引入骨架瓶的样式 */
+@import "./pay.skeleton.wxss";
+
+.pay{
+  width: 100vw;
+  padding: 20rpx 20rpx 120rpx;
+  background: linear-gradient(to bottom, #1dc7ff , #f8f8f8) no-repeat center top;
+  background-size: 100% 50%;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+.image-size{
+  width: 28rpx;
+  height: 28rpx;
+}
+.pay .notice-box{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff4c7;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius: 16rpx;
+}
+.pay .notice-box>text{
+  flex: 1;
+  font-size: 24rpx;
+  color: #e49b3c;
+  margin-left: 20rpx;
+}
+.address-box{
+  margin-top: 20rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #fff;
+  border-radius: 16rpx;
+}
+.address-box .select-address{
+  display: flex;
+  justify-content: space-between;
+}
+.address-box .select-address>text{
+  font-size: 24rpx;
+  color: #999;
+}
+.address-box .user-info-box{
+  margin-top: 20rpx;
+  font-size: 26rpx;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.address-box .user-info-box .user-info{
+  flex: 1;
+}
+.address-box .user-info-box .edit image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.address-box .user-info-box .uname{
+  color: #1dc7ff;
+  font-weight: bold;
+  margin-right: 40rpx;
+  font-size: 28rpx;
+}
+.address-box .user-info-box .default{
+  color: #fff;
+  background-color: #1dc7ff;
+  border-radius: 16rpx;
+  margin-left: 20rpx;
+  padding: 0 8rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+}
+.address-box .user-info-box .uaddress{
+  color: #666;
+  margin-top: 12rpx;
+}
+.all-orders-box{
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+  border-radius: 16rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 28rpx;
+}
+.all-orders-box .box-title{
+  font-size: 26rpx;
+}
+.all-orders-box .order-info-box{
+  margin: 20rpx 0;
+  display: flex;
+  align-items: center;
+}
+.all-orders-box .order-info-box>image{
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 16rpx;
+  margin-right: 12rpx;
+}
+.all-orders-box .order-info-box .order-info{
+  flex: 1;
+}
+.all-orders-box .order-info-box .order-info .title{
+  color: #000;
+  font-weight: bold;
+}
+.all-orders-box .order-info-box .order-info .rules{
+  color: #666;
+  font-size: 24rpx;
+  margin: 4rpx 0 12rpx;
+}
+.all-orders-box .order-info-box .order-info .price-num{
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 24rpx;
+}
+.all-orders-box .order-info-box .order-info .price-num .price{
+  color: #1dc7ff;
+}
+.all-orders-box .order-info-box .order-info .price-num .price>text{
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.all-orders-box .order-info-box .order-info .price-num .num-box{
+  display: flex;
+  align-items: center;
+}
+.order-info .price-num .num-box>image{
+  height: 48rpx;
+  width: 48rpx;
+}
+.order-info .price-num .num-box .num{
+  padding: 0 12rpx;
+  font-size: 28rpx;
+}
+.orders-big-box{
+  margin-bottom: 28rpx;
+}
+.all-orders-box .gap{
+  width: 100%;
+  height: 0;
+  border-top: 2rpx dotted #ccc;
+  position: relative;
+}
+.all-orders-box .total-box{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 32rpx;
+  color: #333;
+  font-size: 26rpx;
+}
+.all-orders-box .total-box .prices{
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #19c6ff;
+}
+.all-orders-box .btn-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 8rpx;
+  left: 0;
+}
+.all-orders-box .btn-box .btn{
+  width: 86%;
+  background-color: #19c6ff;
+  padding: 16rpx;
+  box-sizing: border-box;
+  text-align: center;
+  border-radius: 40rpx;
+  font-size: 28rpx;
+  color: #fff;
+}

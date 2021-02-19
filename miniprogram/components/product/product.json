@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "rules-item": "../../components/rulesItem/rulesItem"
+  }
+}

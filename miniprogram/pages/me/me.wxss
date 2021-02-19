@@ -1,0 +1,116 @@
+.me {
+  color: #333;
+  font-size: 28rpx;
+  background-color: #f4f4f4;
+}
+.me .header {
+  height: 300rpx;
+  overflow: hidden;
+  position: relative;
+  font-size: 32rpx;
+}
+.me .header .me-bg {
+  width: 100%;
+}
+.me .header .user-info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.me .header .user-info .user-img {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+}
+.me .header .user-info .nick-name {
+  padding-top: 16rpx;
+  box-sizing: border-box;
+  color: #fff;
+}
+.me .header .user-info .login-btn {
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+  padding: 0;
+}
+.me .center {
+  display: flex;
+  margin: 20rpx;
+  box-sizing: border-box;
+  background-color: #fff;
+  padding: 16rpx 0;
+  border-radius: 20rpx;
+}
+.me .center .pay-box,
+.me .center .address-box {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.me .center .pay-box .icon,
+.me .center .address-box .icon {
+  margin-bottom: -40rpx;
+}
+.me .center .pay-box .desc,
+.me .center .address-box .desc {
+  margin-left: 12rpx;
+}
+.me .center .pay-box .num,
+.me .center .address-box .num {
+  margin-bottom: 12rpx;
+}
+.me .center .address-box {
+  position: relative;
+}
+.me .center .address-box .gap {
+  height: 60rpx;
+  width: 2rpx;
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.me .center .address-box .address-img {
+  padding: 2rpx;
+  box-sizing: border-box;
+  width: 40rpx;
+  height: 40rpx;
+}
+.me .footer {
+  margin: 20rpx;
+  background-color: #fff;
+  display: flex;
+  padding: 20rpx;
+  box-sizing: border-box;
+  border-radius: 20rpx;
+}
+.me .footer .middle-box {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.me .footer .middle-box .text {
+  text-align: center;
+  margin-top: 8rpx;
+}
+.me .concat-title {
+  text-align: center;
+  color: #56cff7;
+  font-size: 32rpx;
+  font-weight: bold;
+  padding: 20rpx 0;
+  box-sizing: border-box;
+}
+.me .concat-img {
+  width: 400rpx;
+}

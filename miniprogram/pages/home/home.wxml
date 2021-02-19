@@ -1,0 +1,60 @@
+<!-- 引入骨架瓶内容 -->
+<import src="home.skeleton.wxml" />
+<template is="skeleton" wx:if="{{loading}}" />
+
+<view class="home" wx:else>
+  <image src="../../images/home_bg.jpg" class="home-bg"></image>
+  <view class="containter-box">
+    <view class="containter">
+      <view class="logo-box">
+        <text class="title">
+          <text class="name">Nice Canteent</text>
+          <text class="welcome">恺团专送约32分钟 ~ 月售1000 ~ 食无忧</text>
+        </text>
+        <image src="../../images/logo.png" class="logo-img"></image>
+      </view>
+      <view class="desc">公告：没有什么是一顿饭解决不了的烦恼，做个开心的吃货呗，吃饱才有力气减肥~~</view>
+      <view class="discounts">
+        <text>20减4</text>
+        <text>38减8</text>
+        <text>58减10</text>
+        <text>配送费优惠</text>
+      </view>
+    </view>
+  </view>
+  <view class="menu-list-box">
+    <view class="menu-nav">
+      <text class="active">点餐</text>
+      <text>评价</text>
+      <text>商家</text>
+    </view>
+    <view class="menu-list">
+      <view class="asider-nav">
+        <view wx:for="{{menuListDatas}}" wx:key="index" class="{{activeIndex == index ? 'active' : ''}}"
+          bindtap="toggleActiveIndex" data-index="{{index}}" data-type="{{item.type}}">{{item.title}}</view>
+      </view>
+      <view class="show-container">
+        <!-- 商品详细信息数据组件 -->
+        <!-- 通过自定义属性product-data将数据传给子组件 -->
+        <pro-item wx:for="{{productDatas}}" wx:key="index" product-data="{{item}}"
+          bind:sendSelectedRule="receiveSelectedRule" data-index="{{index}}" product-index="{{index}}"
+          change-rules-str="{{changeRulesStr}}" current-product-index="{{currentProductIndex}}"
+          bind:bage-datas="getBageDatas" bind:bounce="bounce" is-auth="{{isAuth}}"  bind:change-is-auth="changeIsAuth" />
+      </view>
+    </view>
+  </view>
+
+  <!-- 购物袋盒子 -->
+  <view class="shop-bage-box {{bounceClass}}">
+    <!-- 授权了 -->
+    <view class="shop-bage" catchtap="goPay" wx:if="{{isAuth}}">
+      <image src="{{bageDatas.length == 0 ? '../../images/empty_bage.png' : '../../images/bage.png'}}"></image>
+      <text hidden="{{bageDatas.length == 0}}">{{bageDatas.length}}</text>
+    </view>
+    
+    <!-- 没授权，显示按钮 -->
+    <button class="auth-btn" open-type="getUserInfo" catchgetuserinfo="getUserInfo" wx:else>
+      <image src="../../images/empty_bage.png"></image>
+    </button>
+  </view>
+</view>

@@ -1,0 +1,78 @@
+.self {
+  color: #333;
+  font-size: 28rpx;
+  background-color: #f4f4f4;
+}
+.self .header {
+  overflow: hidden;
+  position: relative;
+  font-size: 32rpx;
+}
+.self .header .self-bg {
+  width: 100%;
+  filter: blur(1px);
+}
+.self .header .user-info {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.self .header .user-info .user-img {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 50%;
+}
+.self .header .user-info .nick-name {
+  padding-top: 16rpx;
+  box-sizing: border-box;
+  font-size: 36rpx;
+  color: #000;
+}
+.self .container {
+  background-color: #fff;
+  margin: 20rpx;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+  border-radius: 16rpx;
+}
+.self .container .item-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 32rpx 0;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #f4f4f4;
+}
+.self .container .item-box:last-of-type {
+  border-bottom: none;
+}
+.self .container .item-box .icon {
+  width: 32rpx;
+  height: 32rpx;
+}
+.self .box {
+  width: 88vw;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+}
+.self .box .middle-box {
+  display: flex;
+  justify-content: space-between;
+  padding: 32rpx 0;
+  box-sizing: border-box;
+  border-bottom: 2rpx solid #f4f4f4;
+}
+.self .box .middle-box:last-of-type {
+  border-bottom: none;
+}
+.self open-data {
+  margin-right: 8rpx;
+}
+.self open-data:last-of-type {
+  margin-right: 0;
+}

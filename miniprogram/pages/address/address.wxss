@@ -1,0 +1,66 @@
+@import "./address.skeleton.wxss";
+
+.address{
+  height: 100vh;
+  width: 100vw;
+  background-color: #f8f8f8;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.image-size{
+  width: 28rpx;
+  height: 28rpx;
+}
+.address .add-address{
+  width: 100%;
+  background-color: #fff;
+  padding: 16rpx 32rpx;
+  box-sizing: border-box;
+  border-radius: 16rpx;
+  font-size: 28rpx;
+  color: #19bbf1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.address .user-info-box{
+  margin-top: 20rpx;
+  font-size: 28rpx;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 32rpx;
+  box-sizing: border-box;
+  border-radius: 16rpx;
+}
+.address .user-info-box .user-info{
+  flex: 1;
+}
+.address .user-info-box .edit{
+  width: 40rpx;
+  height: 40rpx;
+}
+.address .user-info-box .edit image{
+  width: 40rpx;
+  height: 40rpx;
+}
+.address .user-info-box .uname{
+  color: #1dc7ff;
+  font-weight: bold;
+  margin-right: 40rpx;
+}
+.address .user-info-box .default{
+  color: #fff;
+  background-color: #1dc7ff;
+  border-radius: 16rpx;
+  margin-left: 20rpx;
+  padding: 0 8rpx;
+  box-sizing: border-box;
+  font-size: 24rpx;
+}
+.address .user-info-box .uaddress{
+  color: #666;
+  margin-top: 20rpx;
+}

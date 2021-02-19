@@ -1,0 +1,113 @@
+.order-info-box {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 20rpx;
+  border-radius: 16rpx 16rpx 0 0;
+  padding: 16rpx;
+  box-sizing: border-box;
+}
+.order-info-box .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.order-info-box .header .order-no {
+  font-size: 24rpx;
+  color: #666;
+}
+.order-info-box .header .one-more {
+  border: 2rpx solid #1dc7ff;
+  border-radius: 12rpx;
+  color: #1dc7ff;
+  font-size: 24rpx;
+  padding: 4rpx 8rpx;
+  box-sizing: border-box;
+}
+.order-info-box .user-info-box {
+  font-size: 24rpx;
+  color: #333;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 4rpx;
+}
+.order-info-box .user-info-box .user-info {
+  flex: 1;
+}
+.order-info-box .user-info-box .uname {
+  color: #1dc7ff;
+  font-weight: bold;
+  margin-right: 40rpx;
+  font-size: 26rpx;
+}
+.order-info-box .user-info-box .uaddress {
+  color: #666;
+  margin-top: 4rpx;
+}
+.order-info-box .product-info-box {
+  margin: 16rpx 0;
+  display: flex;
+  align-items: center;
+}
+.order-info-box .product-info-box .pro-img {
+  width: 140rpx;
+  height: 140rpx;
+  border-radius: 16rpx;
+  margin-right: 12rpx;
+}
+.order-info-box .product-info-box .product-info {
+  flex: 1;
+}
+.order-info-box .product-info-box .product-info .title {
+  color: #000;
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.order-info-box .product-info-box .product-info .rules {
+  color: #666;
+  font-size: 24rpx;
+  margin: 4rpx 0 12rpx;
+}
+.order-info-box .product-info-box .product-info .price-num {
+  display: flex;
+  justify-content: space-between;
+  color: #999;
+  font-size: 24rpx;
+}
+.order-info-box .product-info-box .product-info .price-num .price {
+  color: #1dc7ff;
+}
+.order-info-box .product-info-box .product-info .price-num .price .price-text {
+  font-weight: bold;
+  font-size: 28rpx;
+}
+.order-info-box .product-info-box .product-info .price-num .num-box {
+  display: flex;
+  align-items: center;
+}
+.order-info-box .product-info .price-num .num-box .num {
+  padding: 0 12rpx;
+  font-size: 28rpx;
+}
+.order-info-box .gap {
+  width: 100%;
+  height: 0;
+  border-top: 2rpx dotted #ccc;
+  position: relative;
+}
+.order-info-box .time-box {
+  color: #333;
+  font-size: 24rpx;
+  margin: 20rpx 0 8rpx;
+}
+.order-info-box .total-box {
+  display: flex;
+  justify-content: space-between;
+  color: #333;
+  font-size: 26rpx;
+}
+.order-info-box .total-box .prices {
+  font-size: 26rpx;
+  font-weight: bold;
+  color: #19c6ff;
+}

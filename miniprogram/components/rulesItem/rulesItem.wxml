@@ -1,0 +1,6 @@
+<view class="rules-item-box clearfix">
+  <view class="title">{{itemRules.title}}</view>
+  <view class="rules-item clearfix">
+    <text class="rule-text clearfix {{currentRuleIndex == index ? 'active' : ''}}" wx:for="{{itemRules.rules}}" wx:key="index" bindtap="changeRule" data-rule-index="{{index}}" data-rule-item="{{item}}">{{item}}</text>
+  </view>
+</view>

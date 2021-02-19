@@ -1,0 +1,44 @@
+.ulogin-order{
+  width: 100vw;
+  height: 100vh;
+  background-color: #f4f4f4;
+  position: relative;
+  text-align: center;
+}
+.ulogin-order .ulogin-img{
+  width: 100%;
+}
+.ulogin-text{
+  text-align: center;
+  color: #333;
+  font-size: 24rpx;
+}
+.login-btn{
+  margin-top: 16rpx;
+  background-color: #34cc34;
+  color: #fff;
+}
+.empty-text{
+  font-size: 28rpx;
+}
+
+.order {
+  height: 100%;
+  width: 100vw;
+  padding: 20rpx 20rpx 120rpx;
+  background: linear-gradient(to bottom, #1dc7ff, #f8f8f8) no-repeat center top;
+  background-size: 100% 50%;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+  padding-bottom: 20rpx;
+}
+.order .van-tabs {
+  border-radius: 16rpx 16rpx 0 0;
+  overflow: hidden;
+}
+.order .not-data {
+  color: #999;
+  font-size: 24rpx;
+  text-align: center;
+  margin-top: 20rpx;
+}

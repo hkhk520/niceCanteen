@@ -1,0 +1,203 @@
+/* 引入骨架瓶的样式 */
+@import "./home.skeleton.wxss";
+
+.home {
+  width: 100%;
+  background-color: #fff;
+}
+
+.home-bg {
+  width: 100%;
+  height: 424rpx;
+  filter: blur(6rpx);
+  margin-top: -80rpx;
+}
+
+.containter-box {
+  position: relative;
+  padding: 0 24rpx;
+}
+
+.containter {
+  box-sizing: border-box;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  margin-top: -180rpx;
+  border-radius: 20rpx;
+  padding: 18rpx 20rpx;
+  box-shadow: 0 0 2rpx 2rpx #f7f7f7;
+}
+
+.logo-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-box .title {
+  color: black;
+}
+
+.logo-box .title .name {
+  font-weight: bold;
+  font-size: 36rpx;
+}
+
+.logo-box .title .welcome {
+  font-size: 24rpx;
+  display: block;
+  margin: 8rpx 0;
+}
+.containter .desc {
+  font-size: 20rpx;
+  display: block;
+  color: #a4a4a4;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.containter .discounts>text{
+  color: red;
+  font-size: 24rpx;
+  border: 2rpx solid red;
+  border-radius: 8rpx;
+  margin-right: 12rpx;
+  padding: 0 6rpx;
+}
+
+.logo-box .logo-img {
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.menu-list-box {
+  padding-top: 20rpx;
+  overflow: hidden;
+}
+
+.menu-list-box .menu-nav {
+  padding: 0 20rpx;
+}
+
+.menu-list-box .menu-nav>text {
+  border-bottom: 4rpx solid #64d7ff;
+  margin-right: 88rpx;
+  font-size: 28rpx;
+}
+
+.menu-list-box .menu-nav .active {
+  font-weight: bold;
+}
+
+.menu-list-box .menu-list {
+  margin-top: 20rpx;
+  display: flex;
+  overflow: hidden;
+  border-radius: 0 0 20rpx 20rpx;
+}
+
+.menu-list-box .menu-list .asider-nav {
+  text-align: center;
+  box-sizing: border-box;
+  font-size: 28rpx;
+  color: #666;
+  /* height: 800rpx; *//* 溢出隐藏，自动产生滚动条 */
+  overflow-y: auto;
+}
+
+.menu-list-box .menu-list .asider-nav>view {
+  padding: 20rpx 0;
+  background-color: #f7f7f7;
+  width: 160rpx;
+}
+
+.menu-list-box .menu-list .asider-nav>view.active {
+  background-color: white;
+}
+
+.menu-list-box .menu-list .show-container {
+  flex: 1;
+}
+
+.shop-bage-box{
+  position: fixed;
+  left: 8rpx;
+  bottom: 40rpx;
+  z-index: 12;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+}
+.shop-bage{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  padding: 6rpx;
+  box-sizing: border-box;
+  background-color: #eee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shop-bage>image{
+  width: 94%;
+  height: 94%;
+}
+.shop-bage>text{
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  background-color: red;
+  color: #fff;
+  font-size: 20rpx;
+  text-align: center;
+  line-height: 32rpx;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* box-shadow: 0 0 2rpx 2rpx #fff; */
+  border: 2rpx solid #fff;
+}
+/* 加入购物车成功的抖动动画效果 */
+.animation-bounce{
+  animation: bounce .6s linear;
+}
+@keyframes bounce{
+  0%{
+    bottom: 40rpx;
+  }
+  20%{
+    bottom: 50rpx;
+  }
+  40%{
+    bottom: 34rpx;
+  }
+  60%{
+    bottom: 46rpx;
+  }
+  80%{
+    bottom: 38rpx;
+  }
+  100%{
+    bottom: 40rpx;
+  }
+}
+.shop-bage-box .auth-btn{
+  position: absolute;
+  left: 0;
+  top: 0;
+  /* background-color: #64d7ff; */
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  padding: 6rpx;
+}
+.auth-btn>image{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}

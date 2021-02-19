@@ -1,0 +1,41 @@
+<view class="self">
+  <!-- 我的头部 -->
+  <view class="header">
+    <!-- 背景图 -->
+    <image src="../../images/self_bg.jpg" class="self-bg"></image>
+    <view class="user-info">
+      <!-- 登录了 -->
+      <image src="{{userInfo.avatarUrl}}" class="user-img"></image>
+      <!-- 显示昵称 -->
+      <view class="nick-name">{{userInfo.nickName}}</view>
+    </view>
+  </view>
+  <view class="container">
+    <view class="item-box" bindtap="showPopup">
+      <view class="text">个人资料</view>
+      <image src="../../images/right.png" class="icon"></image>
+    </view>
+    <view class="item-box">
+      <navigator open-type="exit" target="miniProgram">退出登录</navigator>
+      <image src="../../images/right.png" class="icon"></image>
+    </view>
+  </view>
+
+  <!-- 展示个人资料的弹窗 -->
+  <van-popup show="{{ showSelfInfo }}" bind:close="onClose" round="true">
+    <view class="box">
+      <view class="middle-box">
+        <view class="title">性别</view>
+        <view class="text">{{userInfo.gender == 1 ? "男" : "女"}}</view>
+      </view>
+      <view class="middle-box">
+        <view class="title">地区</view>
+        <view>
+          <open-data lang="zh_CN" type="userCountry"></open-data>
+          <open-data lang="zh_CN" type="userProvince"></open-data>
+          <open-data lang="zh_CN" type="userCity"></open-data>
+        </view>
+      </view>
+    </view>
+  </van-popup>
+</view>

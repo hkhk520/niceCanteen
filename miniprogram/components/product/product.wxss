@@ -1,0 +1,188 @@
+.pro-item {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16rpx;
+  box-sizing: border-box;
+  margin-bottom: 20rpx;
+}
+
+.pro-item .img-box .product-img {
+  width: 172rpx;
+  height: 172rpx;
+  border-radius: 20rpx;
+}
+
+.product-desc-box {
+  flex: 1;
+  padding-left: 16rpx;
+  box-sizing: border-box;
+}
+
+.product-desc-box .pro-title {
+  font-weight: bold;
+  font-size: 28rpx;
+}
+
+.product-desc-box .pro-center {
+  font-size: 22rpx;
+  color: #7f7f7f;
+}
+
+.product-desc-box .pro-center .material {
+  margin: 8rpx 0;
+}
+
+.fun-box {
+  display: flex;
+  justify-content: space-between;
+  font-size: 28rpx;
+  margin-top: 24rpx;
+}
+.fun-box .right-box{
+  margin-right: 24rpx;
+}
+.fun-box .right-box .count-box{
+  margin-top: 0;
+}
+
+.fun-box .pro-price {
+  color: red;
+  font-weight: bold;
+}
+
+.fun-box .rule-btn {
+  border-radius: 20rpx;
+  background-color: #01b6fd;
+  padding: 0 28rpx !important;
+  font-size: 24rpx !important;
+  color: white;
+  font-weight: normal !important;
+}
+
+.rules-box-bg{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.2);
+  z-index: 10;
+}
+.rules-box{
+  width: 100%;
+  background-color: #fff;
+  position: absolute;
+  left: 0;
+  border-radius: 16rpx 16rpx 0 0;
+  overflow: hidden;
+  padding: 20rpx;
+  box-sizing: border-box;
+  /* bottom的过渡效果 */
+  transition: bottom .5s;
+}
+.rules-header{
+  display: flex;
+  justify-content: space-between;
+}
+.rules-header .header-img{
+  width: 172rpx;
+  height: 172rpx;
+  border-radius: 8rpx;
+}
+.rules-header .header-desc-box{
+  flex: 1;
+  margin-left: 20rpx;
+  color: black;
+  font-size: 28rpx;
+  position: relative;
+}
+.rules-header .header-desc-box .selected-rules{
+  font-size: 22rpx;
+  margin-top: 10rpx;
+}
+.rules-header .header-desc-box .price{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: red;
+}
+.rules-header .header-desc-box .price .price-text{
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-left: -4rpx;
+}
+.rules-header .header-desc-box .close-icon{
+  position: absolute;
+  right: 4rpx;
+  top: 0;
+  width: 32rpx;
+  height: 32rpx;
+}
+.count-box{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 26rpx;
+  color: #333;
+  margin-top: 20rpx;
+}
+.count-box .btns{
+  display: flex;
+  align-items: center;
+}
+.count-box .btns>image{
+  width: 48rpx;
+  height: 48rpx;
+}
+.count-box .btns .add-box{
+  position: relative;
+}
+.count-box .btns .add-box .add-img{
+  width: 48rpx;
+  height: 48rpx;
+}
+.count-box .btns .add-box .add-login{
+  width: 48rpx;
+  height: 48rpx;
+  border-radius: 50%;
+  padding: 0;
+}
+.count-box .btns .add-box .add-login .login{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  vertical-align: top;
+}
+.count-box .btns>text{
+  padding: 0 16rpx;
+  color: #000;
+}
+.rules-container{
+  margin-top: 28rpx;
+}
+.rules-box .cart-btn-box .cart-btn, .cart-login .btn-login{
+  width: 90%;
+  background-color: #01b6fd !important;
+  color: #fff;
+  font-weight: normal;
+  font-size: 26rpx;
+}
+.cart-login{
+  position: relative;
+  margin-top: 32rpx;
+  height: 36px;
+}
+.cart-login .btn-login{
+  position: absolute;
+  bottom: 6rpx;
+  /* 水平居中的写法 */
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.clearfix::before{
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+}

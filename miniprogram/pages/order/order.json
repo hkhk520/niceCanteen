@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-button": "../../vant/button/index",
+    "van-tab": "../../vant/tab/index",
+    "van-tabs": "../../vant/tabs/index",
+    "order-info-box": "../../components/orderInfoBox/orderInfoBox"
+  },
+  "navigationBarTitleText": "我的订单",
+  "onReachBottomDistance": 50
+}

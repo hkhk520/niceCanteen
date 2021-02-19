@@ -1,0 +1,6 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "pro-item": "../../components/product/product"
+  }
+}

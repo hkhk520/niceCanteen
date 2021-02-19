@@ -1,0 +1,89 @@
+.self {
+  color: #333;
+  font-size: 28rpx;
+  background-color: #f4f4f4;
+
+  .header {
+    overflow: hidden;
+    position: relative;
+    font-size: 32rpx;
+
+    .self-bg {
+      width: 100%;
+      filter: blur(1px);
+    }
+
+    .user-info {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+
+      .user-img {
+        width: 140rpx;
+        height: 140rpx;
+        border-radius: 50%;
+      }
+
+      .nick-name {
+        padding-top: 16rpx;
+        box-sizing: border-box;
+        font-size: 36rpx;
+        color: #000;
+      }
+    }
+  }
+
+  .container{
+    background-color: #fff;
+    margin: 20rpx;
+    padding: 0 32rpx;
+    box-sizing: border-box;
+    border-radius: 16rpx;
+    .item-box{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 32rpx 0;
+      box-sizing: border-box;
+      border-bottom: 2rpx solid #f4f4f4;
+      
+      &:last-of-type{
+        border-bottom: none;
+      }
+
+      .icon{
+        width: 32rpx;
+        height: 32rpx;
+      }
+    }
+  }
+
+  .box{
+    width: 88vw;
+    padding: 0 32rpx;
+    box-sizing: border-box;
+
+    .middle-box{
+      display: flex;
+      justify-content: space-between;
+      padding: 32rpx 0;
+      box-sizing: border-box;
+      border-bottom: 2rpx solid #f4f4f4;
+      &:last-of-type{
+        border-bottom: none;
+      }
+    }
+  }
+
+  open-data{
+    margin-right: 8rpx;
+    &:last-of-type{
+      margin-right: 0;
+    }
+  }
+}

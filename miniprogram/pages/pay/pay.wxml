@@ -1,0 +1,75 @@
+<!-- 引入骨架瓶内容 -->
+<import src="pay.skeleton.wxml" />
+<template is="skeleton" wx-if="{{loading}}" />
+
+<view class="pay" wx:else>
+  <!-- 头部公告盒子 -->
+  <view class="notice-box">
+    <image src="../../images/voice.png" class="image-size"></image>
+    <text>亲，请填写好下面信息哦，方便送货</text>
+    <image class="close" src="../../images/close.png" class="image-size"></image>
+  </view>
+
+  <!-- 地址和联系人盒子 -->
+  <view class="address-box">
+  <!-- 选择地址盒子 -->
+    <view class="select-address" bindtap="goAddress">
+      <text>请选择收货地址</text>
+      <image src="../../images/right.png" class="image-size"></image>
+    </view>
+    <!-- 用户地址信息盒子 -->
+    <view class="user-info-box" wx:if="{{addressInfo.uname}}">
+      <view class="user-info">
+        <view>
+          <text class="uname">{{addressInfo.uname}}</text>
+          <text class="uphone">{{addressInfo.phone}}</text>
+          <text class="default" wx:if="{{addressInfo.default}}">默认</text>
+        </view>
+        <view class="uaddress">{{addressInfo.uaddress}}</view>
+      </view>
+      <view class="edit" catchtap="goEditAddress" data-address="{{addressInfo}}">
+        <image src="../../images/edit.png"></image>
+      </view>
+    </view>
+  </view>
+
+  <!-- 订单信息盒子 -->
+  <view class="all-orders-box">
+    <view class="box-title">订单信息</view>
+    <!-- 所有订单数据盒子 -->
+    <view class="orders-big-box">
+      <!-- 每一条订单数据 -->
+      <block wx:for="{{allBageDatas}}" wx:key="index">
+        <view class="order-info-box">
+          <image src="{{item.img}}"></image>
+          <view class="order-info">
+            <view class="title">{{item.title}}</view>
+            <view class="rules">{{item.currentRulesStr}}</view>
+            <view class="price-num">
+              <view class="price">￥<text>{{item.price}}</text></view>
+              <view class="num-box">
+                <image src="../../images/del.png" catchtap="delNum" data-item="{{item}}"></image>
+                <text class="num">{{item.ruleBuyNum}}</text>
+                <image src="../../images/add.png" catchtap="addNum" data-item="{{item}}"></image>
+              </view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </view>
+
+    <!-- 分割线 -->
+    <view class="gap"></view>
+
+    <!-- 总数量和总价格盒子 -->
+    <view class="total-box">
+      <view>共计 {{totalNum}} 件</view>
+      <view class="prices">合计 ￥{{totalPrice}}</view>
+    </view>
+
+    <view class="btn-box">
+      <view class="btn" bindtap="payOrder">立即结算</view>
+    </view>
+
+  </view>
+</view>

@@ -1,0 +1,62 @@
+<view class="me">
+  <!-- 我的头部 -->
+  <view class="header">
+    <!-- 背景图 -->
+    <image src="../../images/me_bg.jpg" class="me-bg"></image>
+    <view class="user-info">
+      <!-- 登录了 -->
+      <image src="{{userInfo.avatarUrl}}" class="user-img" wx:if="{{isAuth}}"></image>
+      <!-- 为授权 -->
+      <button class="login-btn" open-type="getUserInfo" bindgetuserinfo="getuserinfo" wx:else>
+        <image src="../../images/ulogin.png" class="user-img"></image>
+      </button>
+      <!-- 显示昵称 -->
+      <view class="nick-name">{{isAuth ? userInfo.nickName : "点击头像登录"}}</view>
+    </view>
+  </view>
+  <view class="center">
+    <view class="pay-box" bindtap="goPay">
+      <view class="icon">
+        <van-icon name="goods-collect" color="#1dc7ff" size="40rpx" />
+      </view>
+      <view class="desc">
+        <view class="num">{{payNum}}</view>
+        <view class="text">我的结算</view>
+      </view>
+    </view>
+    <view class="address-box" bindtap="goAddress">
+      <view class="gap"></view>
+      <view class="icon">
+        <image src="../../images/address.png" class="address-img"></image>
+      </view>
+      <view class="desc">
+        <view class="num">{{addressNum}}</view>
+        <view class="text">我的地址</view>
+      </view>
+    </view>
+  </view>
+  <view class="footer">
+    <view class="middle-box" bindtap="goSelf">
+      <van-icon  size="50rpx" name="wap-home" color="#f8725d" />
+      <view class="text">个人中心</view>
+    </view>
+    <view class="middle-box" bindtap="showPopup">
+      <van-icon  size="50rpx" name="chat" color="#5ebaf2" />
+      <view class="text">联系我们</view>
+    </view>
+    <view class="middle-box" bindtap="showPopup">
+      <van-icon  size="50rpx" name="audio" color="#eba547" />
+      <view class="text">客服</view>
+    </view>
+    <view class="middle-box" bindtap="showPopup">
+      <van-icon  size="50rpx" name="like" color="#f9678c" />
+      <view class="text">关注</view>
+    </view>
+  </view>
+
+  <!-- 展示黄恺的微信 -->
+  <van-popup show="{{ showConcat }}" bind:close="onClose" round="true">
+    <view class="concat-title">联系我吧</view>
+    <image src="../../images/me_code.jpg" class="concat-img"></image>
+  </van-popup>
+</view>
